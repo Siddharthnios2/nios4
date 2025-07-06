@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploy NIOS Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .step {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+        }
+        .step h3 {
+            margin: 0 0 10px 0;
+            color: #007bff;
+        }
+        .step ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .step li {
+            margin: 5px 0;
+        }
+        .highlight {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ffeaa7;
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+        .warning {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #f5c6cb;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Deploy NIOS Website Live</h1>
+        
+        <div class="step">
+            <h3>Option 1: Netlify Drop (Fastest - No Git Required)</h3>
+            <ol>
+                <li>Go to <a href="https://app.netlify.com/drop" target="_blank" class="button">Netlify Drop</a></li>
+                <li>Drag and drop your entire website folder (all files including assets folder)</li>
+                <li>Wait for upload to complete</li>
+                <li>Your site will be live instantly with a URL like: <code>https://random-name.netlify.app</code></li>
+                <li>You can customize the URL later in Netlify settings</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h3>Option 2: GitHub Pages (Free Hosting)</h3>
+            <ol>
+                <li>Install Git from <a href="https://git-scm.com/downloads" target="_blank">git-scm.com</a></li>
+                <li>Create a GitHub account at <a href="https://github.com" target="_blank">github.com</a></li>
+                <li>Create a new repository named <code>nios-website</code></li>
+                <li>Upload your files to the repository</li>
+                <li>Enable GitHub Pages in repository settings</li>
+                <li>Your site will be available at <code>https://yourusername.github.io/nios-website</code></li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h3>Option 3: Vercel (Modern Platform)</h3>
+            <ol>
+                <li>Go to <a href="https://vercel.com" target="_blank">vercel.com</a></li>
+                <li>Sign up with GitHub or email</li>
+                <li>Click "New Project"</li>
+                <li>Import your website folder</li>
+                <li>Deploy instantly with a custom domain option</li>
+            </ol>
+        </div>
+
+        <div class="highlight">
+            <strong>Recommended:</strong> Use Netlify Drop for the fastest deployment. It's free, requires no account, and your site will be live in seconds!
+        </div>
+
+        <div class="warning">
+            <strong>Important:</strong> Make sure to include ALL files when uploading:
+            <ul>
+                <li>index.html</li>
+                <li>styles.css</li>
+                <li>script.js</li>
+                <li>assets/ folder (with all images)</li>
+                <li>README.md</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="https://app.netlify.com/drop" target="_blank" class="button">🚀 Deploy to Netlify Now</a>
+            <a href="index.html" class="button">👀 Preview Website</a>
+        </div>
+    </div>
+</body>
+</html> 
